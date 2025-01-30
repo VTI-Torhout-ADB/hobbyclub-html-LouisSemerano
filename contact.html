@@ -1,11 +1,13 @@
-<!DOCTYPE html>
 <html>
     <head>
+        <head>
+
+            </head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        
+       
         <title>Hobby</title>
     </head>
-    <header><h1>Out of the box</h1></header>
+    <header><h1>Contact</h1></header>
     <body>
         <nav>
             <ul>
@@ -16,32 +18,27 @@
             </ul>
         </nav>
         <main>
-            <form name="naam" id="naam" method="post" action="vervolg.php">
-                <head>
-                <h1>Stuur ons een bericht</h1>
-                <p>Vul het formulier hieronder in om contact met ons op te nemen.  We horen graag van je!</p>
-                </head>
-                <table>
-                    <tr>    <td>Naam:</td>
-                        <td><input name= "Naam" type= "text" required></td>
-                    </tr>
-                    <tr>    <td>Email:</td>
-                        <td><input name="email" type="email" required></td>
-                    </tr>
-                    <tr>    <td>Bericht:</td>
-                        <td><input name= "Bericht" type= "text" ></td>
-                    </tr>
-                    <tr>    <td>
-                        <input name="reset" type="reset" value="Annuleren"></td>
-                        <td><input name="verzend" type="submit" value="Verstuur"></td>
-                    </tr>  
-                </table>
+            <h1>Stuur ons een bericht</h1>
+            <p>Vul het formulier hieronder in om contact met ons op te nemen.  We horen graag van je!</p>
+            <div class="container">
+                <form action="action_page.php">
+                
+                    <label for="naam">Naam</label>
+                    <input type="text" id="fname" name="naam" placeholder="Jouw naam..">
+                
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Jouw e-mail">
+        
+                    <label for="subject">Bericht</label>
+                    <textarea id="bericht" name="bericht" placeholder="Schrijf hier je bericht " style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                
                 </form>
-                heeft contextmenu
-
+                </div>
         </main>
         <footer>
-            <p>© 2025 - Louis Semerano</p>
+            <p>Bram Basha</p>
         </footer>
     </body>
 </html>
